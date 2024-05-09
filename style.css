@@ -1,0 +1,219 @@
+
+ol, ul{
+    list-style: none;  
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #DD1155;
+    margin: 0px;
+    padding: 0px;
+}
+.titulopag{
+    font-family: "Jersey 25", sans-serif;
+    color: black;
+}
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: #880044;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+}
+
+
+header nav ul{
+    display: flex;
+    gap: 1.1em;
+}
+header nav ul li a{
+    color: white;
+}
+header h1{
+    color: white;
+}
+header a img {
+    width: 50px;
+    height: 50px;
+    padding: 0.2cm;
+}
+
+
+@media (max-width: 768px){
+/* Asegura que el checkbox se muestre antes del menú en el HTML */
+#check {
+    display: none; /* Oculta el checkbox por defecto */
+}
+
+.checkbtn {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    user-select: none;
+    background-color: #880044; /* Añade un color de fondo al botón del menú */
+}
+
+.menu {
+    display: none; /* Oculta el menú por defecto */
+    flex-direction: column; /* Cambia la dirección a columna */
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #880044;
+}
+
+.menu li {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#check:checked + nav .menu {
+    display: flex; /* Muestra el menú cuando el checkbox está seleccionado */
+}
+}
+
+
+.imagen1{
+    display:flex;
+    width: 150px;
+    height: 180px; 
+    border-radius: 3%;
+}
+
+
+
+footer{
+    background-color: #AA1155;
+    display: flex;
+}
+.seccion-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10em;
+    
+
+}
+@media (max-width: 768px){
+    .seccion-1{
+        background-color: rosybrown;
+        display: flex;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 20%;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+.seccion-2{
+    width: 100%;
+}
+.imagen2{
+    display: flex;
+    width:100%;
+    height: 150px;
+    
+}   
+
+footer h3{
+    font-family: "Jersey 25", sans-serif;
+}
+
+footer ul li a{
+    color: #FFEE88;
+    background-color: black;
+    border-radius: 10%;
+}
+
+.seccion-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna {
+    width: 30%; /* Ajusta el ancho de las columnas según tu diseño */
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    text-align: center;
+}
+
+.columna img {
+    width: 100%;
+    max-width: 200px; /* Ajusta el tamaño máximo de las imágenes según tu diseño */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.columna h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.columna p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.boton-compra {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #880044;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.redireccionar{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 30px;
+    bottom: auto;
+}
+
+.acerca-de h2{
+    font-family: "Jersey 25", sans-serif;
+}
+.botongen {
+    text-align: center;
+}
+
+#btn-generar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-generar:hover {
+    background-color: #45a049;
+}
+
+#footer {
+    margin-top: 20px;
+}
+
+#frase {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #FFEE88;
+}
+

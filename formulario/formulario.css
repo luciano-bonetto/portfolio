@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Jersey 25", sans-serif;
+}
+
+header {
+    background-color: #880044;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header a img {
+    width: 80px;
+    height: 80px;
+    padding: 0.2cm;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.checkbtn {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #880044;
+        width: 100%;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu li {
+        padding: 10px 20px;
+    }
+
+    .menu li:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+main {
+    padding: 20px 0;
+}
+
+.titulo_seccion {
+    font-size: 24px;
+    color: #003750;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form_contenedor {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #880044;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #660033;
+}
+
+.Conten-form {
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #AA1155;
+    color: #FFEE88;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+footer h3 {
+    font-family: "Jersey 25", sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a {
+    color: #FFEE88;
+    background-color: #660033;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+footer ul li a:hover {
+    background-color: #880044;
+}

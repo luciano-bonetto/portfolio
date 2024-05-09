@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/index.html"><img src="/img/images1.png" alt="Imagen logo"></a>
+            <h1 class="titulopag">Desarrolla tu ingenio</h1>
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="check" />
+            <nav>
+                <ul class="menu">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="#Acercademi">Acerca de mi</a></li>
+                    <li><a href="#Proyectos">Proyectos</a></li>
+                    <li><a href="formulario.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="Conten-form">
+                <h2 class="titulo_seccion">Contacto</h2>
+                <div class="form_contenedor">
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo:</label>
+                            <input type="email" id="correo" name="correo">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Número de contacto:</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="preferencia">Preferencia de contacto:</label>
+                            <select id="preferencia" name="preferencia">
+                                <option value="telefono">Teléfono</option>
+                                <option value="correo">Correo Electrónico</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h3>Contactanos</h3>
+            <ul>
+                <li><a href="whatsapp.com">Whatsapp</a></li>
+                <li><a href="facebook.com">Facebook</a></li>
+                <li><a href="Instagram.com">Instagram</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
